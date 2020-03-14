@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <app-intro-title></app-intro-title>
+<div class="welcome text-center">
+    <h6>Hello!</h6>
+    <h5>Sign Up to get started</h5>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <app-text-box [myType]="type[0]" [placeholder]="Placeholder[0]" [label]="Label[0]" ></app-text-box>
+        </div> 
+        <div class="col-md-6">
+            <label for="Email ID">Email ID</label>
+            <div class="email"><input class="values" type="email" placeholder="Your Robosoft Mail ID"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <app-text-box [myType]="type[1]" [placeholder]="Placeholder[1]" [label]="Label[1]" ></app-text-box>
+        </div>
+        <div class="col-md-6">
+            <app-text-box [myType]="type[0]" [placeholder]="Placeholder[2]" [label]="Label[2]" ></app-text-box>
+        </div>
+    </div>
+    <div class="row  radioBtn custom-control custom-radio">
+        <div class="col-md-12">
+            <label for="Position" class="position">Position </label> 
+            <div>
+                <span class="rds"><input class="input-radio"   type="radio" id="r1" name="position">
+                </span>Recruiter
+                <span class="rd"><input type="radio" id="r2" name="position">
+                </span>Organizer
+                <span class="rd"><input type="radio" id="r3" name="position">
+                </span>Approval Authority
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="Password">Password</label>
+            <div class="password"><input class="values" type="password" placeholder="Enter Your Password"></div>
+        </div>
+        <div class="col-md-6">
+            <label for="Confirm Password">Confirm Password</label>
+            <div class="cpassword"><input class="values" type="password" placeholder="ReEnter Your Password"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <button type="button" class="btn myButton">Sign Up</button>
+        <div class="footer-text">Already have an Account?<label for="signin">Sign In</label></div>
+    </div>
+</div>
+</div>

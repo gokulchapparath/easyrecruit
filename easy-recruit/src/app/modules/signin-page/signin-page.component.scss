@@ -1,0 +1,91 @@
+.container-fluid 
+    {
+        background: url(src\assets\images\img_bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        .header
+        {
+            font-size: 20px;
+            font-family: myFont;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.17px;
+            h4
+            {
+                padding-top: 40px;
+                color: #808087;
+                font-size: 20px;
+                line-height: 0px;
+                label
+                {
+                    color: #F52851;
+                }
+            }
+            h5
+            {
+                color: #FFFFFF;
+                font-size: 28px;
+                padding-bottom: 20px;
+            }
+        }
+        .container
+        {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .row
+            {
+                padding-bottom: 25px;
+                .values
+                {
+                    height: 40px;
+                    width: 330px;
+                    border-radius: 6px;
+                    border: 1px solid #FFFFFF;
+                    background-color: rgba(255,255,255,0.06); 
+                    color: white;
+                }
+                .forgot-password
+                {
+                    color: #F52851;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    padding-left: 210px;
+                }
+            }
+            .myButton 
+            {
+                height: 40px;
+                width: 250px;
+                border-radius: 8px;
+                background-color: #F52851;
+                color: #FFFFFF;
+                font: myfont;
+                font-size: 20px;
+                line-height: 18px;
+                text-align: center;
+            }
+            .footer-text 
+            {
+                position: fixed;
+                bottom: 30px;
+                height: 20px;
+                width: 337px;
+                color: #808087;
+                font-family: Muli;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 0.29px;
+                line-height: 20px;
+
+                label
+                {
+                    color: #F52851;
+                }
+            }
+        }
+}

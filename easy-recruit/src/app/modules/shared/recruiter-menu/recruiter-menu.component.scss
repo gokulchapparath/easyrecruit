@@ -1,0 +1,121 @@
+
+.robo-sidebar {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    width: 85px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #121432;
+    overflow-x: hidden;
+    transition: 0.5s;
+    white-space: nowrap;
+    
+    .robo-header{
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 60px 8px 60px 32px;
+        .robologo{
+
+            .roboimg{
+                width:170px;
+                height: 32px;
+            }
+        }
+
+        .robotitle{
+            width:170px;
+            color: rgb(255,255,255,100%);
+            // font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+
+
+    a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    // .robo-menubar-icons {
+      
+       
+    //   width: 25px;
+    //   height: 25px;
+    
+    // }
+    .robo-menu-item:hover {
+        background-color: rgb(245,40,81,20%);
+        
+        border-left: 5px solid rgb(245,40,81,100%);
+        .robo-icon-text{
+            color: white;
+          
+            font-weight: bold;
+        }
+        .robo-menubar-icons {
+         
+           content: url('src/assets/icons/icn_dashboard_white.png');
+          width: 25px;
+          height: 25px;
+        
+        }
+        
+    }
+
+
+
+   
+    .robo-footer{
+        border-top: 1px solid rgb(255,255,255,10%);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+}
+
+
+.robo-menu-item{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+  
+}
+
+
+
+.robo-icon-text {
+    vertical-align: middle;
+    padding: 10px 30px 10px 30px;
+    font-size: medium;
+    font-weight: 100;
+    color: #c1bebe;
+    
+}
+
+.robo-menubar-icons {
+    height: 25px;
+    width: 25px;
+    padding-bottom: 3px;
+}
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .robo-sidebar {
+        padding-top: 15px;
+    }
+    .robo-sidebar a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,40 @@
+
+/* You can add global styles to this file, and also import other style files */
+$myfont:Muli Bold;
+body {
+    background-color: #121432;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: 	rgb(104,104,104,20%); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(104,104,104,100%); 
+  }
+  .main-content {
+    overflow-x:scroll;
+    overflow-y: hidden;
+    position: absolute;
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 100px;
+    border-radius: 50px 0px 0px 50px;
+    background-color: #f6f9fd;
+    height: 100%;
+    width: 100vh;
+    
+}

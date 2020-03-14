@@ -1,0 +1,112 @@
+.container-fluid 
+    {
+        background: url(src\assets\images\img_bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        h6
+        {
+            padding-top: 40px;
+            color: #DC143C;
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h5
+        {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 20px;
+        }
+        .container
+        {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            .radioBtn
+            {
+                align-self: flex-start;
+                padding-left: 15%;
+                [type=radio]
+                { 
+                    // position: absolute;
+                    // opacity: 0;
+                    // width: 0;
+                    // height: 0;
+                    background-color: red;
+                }
+                // [type=radio] + img 
+                // {
+                //     cursor: pointer;
+                // }
+                .rd
+                {
+                    padding-right: 5px;
+                    padding-left: 60px;
+                }
+                .rds
+                {
+                    padding-right: 5px;
+                }
+            }
+            .row
+            {
+                padding-bottom: 25px;
+            
+                .values
+                {
+                    height: 40px;
+                    width: 330px;
+                    border-radius: 6px;
+                    border: 1px solid #FFFFFF;
+                    background-color: rgba(255,255,255,0.06); 
+                    color: white;
+                    margin-right: 40px;
+                }
+            }
+                .myButton 
+                {
+                    height: 40px;
+                    width: 250px;
+                    border-radius: 8px;
+                    background-color: #F52851;
+                    color: #FFFFFF;
+                    font: myfont;
+                    font-size: 20px;
+                    line-height: 18px;
+                    text-align: center;
+                }
+            // input::radio {
+            //     color: red;
+            
+            .footer-text 
+            {
+                position: fixed;
+                bottom: 30px;
+                height: 20px;
+                width: 337px;
+                color: #808087;
+                font-family: Muli;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 0.29px;
+                line-height: 20px;
+
+                label
+                {
+                    color: #F52851;
+                }
+            }
+            .input-radio
+            {
+                border: 1px solid red;
+            }
+        }
+    }
+    
+    

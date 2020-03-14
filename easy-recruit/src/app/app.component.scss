@@ -1,0 +1,13 @@
+.main-content{
+  
+    overflow-x:auto;
+    overflow-y: auto;
+    position: absolute;
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 100px;
+    border-radius: 50px 0px 0px 50px;
+    background-color: #f6f9fd;
+    height: 100%;
+    width: 100vh;
+}

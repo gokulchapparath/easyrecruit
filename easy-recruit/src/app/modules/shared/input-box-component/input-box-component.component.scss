@@ -1,0 +1,27 @@
+
+.label-style {
+    font-size: 13px;
+    color: #C1BEBE;
+    letter-spacing: .5px;
+}
+
+.input-box-style {
+
+    border-radius: 5px;
+    color: #F52851;
+    background-color: transparent;
+    border: 1px solid #C1BEBE;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    width: 100%;
+}
+
+.input-box-style:focus {
+    outline: none;
+    cursor: text;
+}
+
+.input-box-style:hover {
+    cursor: text;
+}
