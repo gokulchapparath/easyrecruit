@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>tables</title>
+  <style>
+    .table-striped>tbody>tr:nth-child(odd)>td,
+    .table-striped>tbody>tr:nth-child(odd)>th {
+      background-color: #ffffff;
+
+    }
+
+    .table-striped>tbody>tr:nth-child(even)>td,
+    .table-striped>tbody>tr:nth-child(even)>th {
+      background-color: #F6F9FD;
+
+    }
+
+    .table-striped>thead {
+      background-color: #F6F9FD;
+
+    }
+
+    .container {
+      padding: 50px 50px 50px 50px;
+      border-radius: 50px 50px 50px 50px;
+      height: 100%;
+      border: 1px solid #E6E5F2;
+    }
+
+    .badge-pill {
+
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.23px;
+      line-height: 30px;
+      background-color: #F52851;
+      color: #FFFFFF;
+      height: 30px;
+      width: 60px;
+
+    }
+
+    .status-select {
+      border: none;
+      background-color: transparent;
+      outline: none;
+
+      /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; */
+      /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+      /* -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); */
+    }
+
+    .status-select:after {
+      /*content: "\25C0"; /* left arrow */
+      /*content: "\25b6"; /* right arrow */
+      /*content: "\25b2"; /* up arrow */
+      /* content: "\25bc"; /* down arrow */
+      color: black;
+    }
+
+    .status-select:focus {
+      outline: none;
+    }
+
+    option {
+      border: none;
+      outline: none;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <table class="table table-borderless table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Designation</th>
+          <th scope="col">Applicants</th>
+          <th scope="col">Recieved Date</th>
+          <th scope="col">Status</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">UX/UI</th>
+          <td><span class="badge-pill">10</span></td>
+          <td>Otto</td>
+          <td>
+            <select name="status" id="status" class="status-select">
+              <option value="active">Active</option>
+              <option value="closed">Closed</option>
+            </select>
+          </td>
+          <td>@mdo</td>
+        </tr>
+
+        <tr>
+          <th scope="row">UX/UI</th>
+          <td><span class="badge-pill">10</span></td>
+          <td>Otto</td>
+          <td>
+            <select name="status" id="status" class="status-select">
+              <option value="active">Active</option>
+              <option value="closed">Closed</option>
+            </select>
+          </td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+
+</html>
