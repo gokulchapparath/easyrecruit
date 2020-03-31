@@ -16,6 +16,8 @@ import { InviteComponent } from './modules/invite/invite.component';
 import { NotificationComponent } from './modules/notification/notification.component';
 import { SettingsComponent } from './modules/settings/settings.component';
 import { TextBoxComponent } from './modules/shared/text-box/text-box.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,10 @@ import { TextBoxComponent } from './modules/shared/text-box/text-box.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

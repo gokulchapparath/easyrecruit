@@ -8,6 +8,7 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { CvAnalysisComponent } from './modules/cv-analysis/cv-analysis.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SigninPageComponent } from './modules/signin-page/signin-page.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ component:AssignboardComponent
   {
     path: 'signup',
     component: SignupPageComponent
+  },
+  {
+    path:'signin',
+    component:SigninPageComponent
   }
 ];
 
@@ -50,4 +55,4 @@ component:AssignboardComponent
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [SettingsComponent,NotificationComponent,InviteComponent,AssignboardComponent,RejectedcvComponent,CvAnalysisComponent,DashboardComponent,SignupPageComponent]
+export const routingComponents = [SigninPageComponent,SettingsComponent,NotificationComponent,InviteComponent,AssignboardComponent,RejectedcvComponent,CvAnalysisComponent,DashboardComponent,SignupPageComponent]

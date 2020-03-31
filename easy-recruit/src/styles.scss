@@ -2,6 +2,7 @@
 /* You can add global styles to this file, and also import other style files */
 $myfont:Muli Bold;
 body {
+  overflow-x:hidden;
     background-color: #121432;
 }
 /* width */
@@ -26,8 +27,8 @@ body {
     background: rgb(104,104,104,100%); 
   }
   .main-content {
-    overflow-x:scroll;
-    overflow-y: hidden;
+    overflow-x:hidden;
+   overflow-y: hidden;
     position: absolute;
     transition: margin-left .5s;
     padding: 16px;
@@ -35,6 +36,6 @@ body {
     border-radius: 50px 0px 0px 50px;
     background-color: #f6f9fd;
     height: 100%;
-    width: 100vh;
+    width: 93%;
     
 }

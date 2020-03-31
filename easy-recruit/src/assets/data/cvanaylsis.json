@@ -1,0 +1,91 @@
+[
+    {
+      "id" : 1,
+      "Designation": "UX/UI",
+      "Applicants": 10,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi/Mumbai"
+    },
+    {
+      "id" : 2,
+      "Designation": "iOS Developer",
+      "Applicants": 8,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi/Bangalore"
+    },
+    {
+      "id" : 3,
+      "Designation": "Angular Developer",
+      "Applicants": 4,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi/Bangalore"
+    },
+    {
+      "id" : 4,
+      "Designation": "Technical Lead - Java",
+      "Applicants": 3,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi/Bangalore"
+    },
+    {
+      "id" : 5,
+      "Designation": "Product Manager",
+      "Applicants": 3,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi"
+    },
+    {
+      "id" : 6,
+      "Designation": "React Native Developer",
+      "Applicants": 2,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi/Bangalore"
+    },
+    {
+      "id" : 7,
+      "Designation": "React.js Devloper",
+      "Applicants": 2,
+      "Recieveddate": "2020,2,4",
+      "status":"Closed",
+      "Location":"Udupi/Bangalore"
+    },
+    {
+      "id" : 8,
+      "Designation": "Technical Architect-Frontend (Angular)",
+      "Applicants": 1,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi/Bangalore"
+    },
+    {
+      "id" : 9,
+      "Designation": "Php Developer",
+      "Applicants": 1,
+      "Recieveddate": "2020,2,4",
+      "status":"Closed",
+      "Location":"Udupi/Bangalore"
+    },
+    {
+      "id" : 10,
+      "Designation": "Java Developer",
+      "Applicants": 1,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi/Bangalore"
+    },
+    {
+      "id" : 11,
+      "Designation": ".Net Developer",
+      "Applicants": 1,
+      "Recieveddate": "2020,2,4",
+      "status":"Active",
+      "Location":"Udupi/Bangalore"
+    }
+    
+  ]

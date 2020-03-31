@@ -1,6 +1,75 @@
-<app-recruiter-menu [cvanalysisstyle]="mydashboardstyle"></app-recruiter-menu>    
+<app-recruiter-menu [cvanalysisstyle]="mydashboardstyle"></app-recruiter-menu>
 <div id="main" class="main-content">
-    <h2>CV analysis</h2>
-    <p>Hover over any part of the sidebar to open the it.</p>
-    <p>To close the sidebar, move your mouse out of the sidebar.</p>
+  <h2>CV analysis</h2>
+  <div class="container-fluid">
+
+    <table class="table table-borderless table-striped">
+
+      <thead>
+        <tr>
+          <th scope="col">Designation</th>
+          <th scope="col">Applicants</th>
+          <th scope="col">Recieved Date</th>
+          <th scope="col">Status</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let list of list">
+          <!-- designation started -->
+          <td scope="row" class="td-designation">{{list.Designation}}</td>
+          <!-- designation ended -->
+
+          <!-- ==================================== -->
+
+          <!-- if loop for Applicants starts -->
+          <td *ngIf="list.status === 'Closed' ;else Spanred" class="td-applicants"><span class="badge bg-secondary "
+              style="  height: 30px;
+            width: 60px;">{{list.Applicants}}</span></td>
+          <!-- else block Spanred stated -->
+          <ng-template #Spanred>
+            <td class="td-applicants"><span class="badge " style="  height: 30px;
+            width: 60px;">{{list.Applicants}}</span></td>
+          </ng-template>
+          <!-- if loop for Applicants ended -->
+
+          <!-- ==================================== -->
+
+          <!-- recieveddate started -->
+          <td class="td-Recieveddate">{{list.Recieveddate | date:"dd MMM, yyyy" }}</td>
+          <!-- recieveddate ended -->
+
+          <!-- ==================================== -->
+
+          <!-- if loop for status -->
+          <td *ngIf='list.status === "Active";else Statusclosed' id={{list.id}} class="td-status">
+            <select id="status" class="status-select" (change)="onChange($event)">
+              <option value="Active" selected>Active</option>
+              <option value="Closed">Closed</option>
+            </select>
+          </td>
+          <!-- elseblock Statusclosed started -->
+          <ng-template #Statusclosed>
+            <td id={{list.id}} class="td-status">
+              <select id="status" class="status-select" (change)="onChange($event)">
+                <option value="Active">Active</option>
+                <option value="Closed" selected>Closed</option>
+              </select>
+            </td>
+          </ng-template>
+          <!-- if-elseblock status ended -->
+
+          <!-- ==================================== -->
+
+          <!-- location started -->
+          <td class="td-Location">{{list.Location}}</td>
+          <!-- location ended -->
+        </tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
 </div>

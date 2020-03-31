@@ -17,7 +17,7 @@
         display: inline-flex;
         flex-direction: column;
         width: 100%;
-        padding: 60px 8px 60px 32px;
+        padding: 60px 8px 40px 32px;
         .robologo{
 
             .roboimg{
@@ -30,7 +30,11 @@
             width:170px;
             color: rgb(255,255,255,100%);
             // font-weight: bold;
-            letter-spacing: 1px;
+            font-family: Muli;
+            font-size: 14.5px;
+            font-weight: bold;
+            letter-spacing: 0.56px;
+            line-height: 29px;
         }
     }
 
@@ -38,7 +42,11 @@
     a{
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 25px;
+        font-family: Muli;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.62px;
+        line-height: 24px;
         color: #818181;
         display: block;
         transition: 0.3s;
@@ -56,8 +64,11 @@
         border-left: 5px solid rgb(245,40,81,100%);
         .robo-icon-text{
             color: white;
-          
-            font-weight: bold;
+            font-family: Muli;
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 0.62px;
+            line-height: 24px;
         }
         .robo-menubar-icons {
          
