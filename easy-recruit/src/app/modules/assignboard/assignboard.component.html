@@ -1,6 +1,79 @@
-<app-recruiter-menu [assignboardstyle]="mydashboardstyle"></app-recruiter-menu> 
+<app-recruiter-menu [assignboardstyle]="mydashboardstyle"></app-recruiter-menu>
 <div id="main" class="main-content">
-    <h2>AssignBoard</h2>
-    <p>Hover over any part of the sidebar to open the it.</p>
-    <p>To close the sidebar, move your mouse out of the sidebar.</p>
+  <h2>AssignBoard</h2>
+  <div class="container-fluid">
+    <table class="table table-borderless table-striped">
+
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Designation</th>
+          <th scope="col">Location</th>
+          <th scope="col">Assign Date</th>
+          <th scope="col">Organizer</th>
+
+        </tr>
+      </thead>
+
+      <tbody>
+<!-- *ngFor loop starts -->
+<tr *ngFor="let assign of list">
+  <!-- Name started -->
+  <td scope="row" class="td-Name">
+    {{assign.Name}}
+  </td>
+  <!-- Name ended -->
+
+  <!-- ==================================== -->
+
+  <!-- Designation starts -->
+  <td class="td-Designation">
+    {{assign.Designation}}
+  </td>
+
+  <!-- Designation ended -->
+
+  <!-- ==================================== -->
+
+  <!-- Location started -->
+  <td class="td-Location">{{assign.Location}}</td>
+  <!-- Location ended -->
+
+  <!-- ==================================== -->
+
+  <!-- Assign Date started -->
+  <td class="td-Assigneddate">{{assign.AssignDate | date:"dd MMM, yyyy" }}</td>
+
+  <!-- Assign Date ended -->
+
+  <!-- ==================================== -->
+
+  <!-- Organizer started -->
+  <td class="td-Organizer">
+    <select class="organizer-select">
+      <option  >Choose</option>
+      <option value="Raksha" >Raksha</option>
+      <option value="Ashwath">Ashwath</option>
+      <option value="Riya">Riya</option>
+      <option value="Nisha">Nisha</option>
+    </select>
+  </td>
+  <!-- organizer ended -->
+</tr>
+
+
+<!-- *ngFor ends -->
+        <!-- empty row -->
+        <tr class="emptyrow">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- empty row ends -->
+      </tbody>
+
+    </table>
+  </div>
 </div>
