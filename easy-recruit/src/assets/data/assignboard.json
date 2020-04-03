@@ -1,0 +1,82 @@
+[
+    {
+        "id" : 1,
+        "Name": "Nithin Anand",
+        "Designation": "UI/UX Designer",
+        "Location": "Udupi",
+        "AssignDate":"2020,3,4"
+
+    },
+    {
+        "id" : 2,
+        "Name": "Sundar Mohan Rao",
+        "Designation": "IOS Devoloper",
+        "Location": "Bangalore",
+        "AssignDate":"2020,3,4"
+
+    },
+    {
+        "id" : 3,
+        "Name": "Rajesh Gangoli",
+        "Designation": "Angular Developer",
+        "Location": "Udupi",
+        "AssignDate":"2020,3,4"
+
+    },
+    {
+        "id" : 4,
+        "Name": "Srikanth",
+        "Designation": "Technical Lead - Java",
+        "Location": "Bangalore",
+        "AssignDate":"2020,3,4"
+
+    },
+    {
+        "id" : 5,
+        "Name": "Athul Mahadev",
+        "Designation": "Project Manager",
+        "Location": "Udupi",
+        "AssignDate":"2020,3,4"
+
+    },
+    {
+        "id" : 6,
+        "Name": "Ashok Gangothri",
+        "Designation": "React Native Developer",
+        "Location": "Udupi",
+        "AssignDate":"2020,3,3"
+
+    },
+    {
+        "id" : 7,
+        "Name": "Adal Dsouza",
+        "Designation": "Technical Architect - Frontend (Angular)",
+        "Location": "Bangalore",
+        "AssignDate":"2020,3,3"
+
+    },
+    {
+        "id" : 8,
+        "Name": "Krishna",
+        "Designation": "Php Developer",
+        "Location": "Bangalore",
+        "AssignDate":"2020,3,2"
+
+    },
+    {
+        "id" : 9,
+        "Name": "Shreyas Raj",
+        "Designation": "Java Developer",
+        "Location": "Udupi",
+        "AssignDate":"2020,3,2"
+
+    },
+    {
+        "id" : 10,
+        "Name": "Karthik Nayak",
+        "Designation": ".Net Developer",
+        "Location": "Bangalore",
+        "AssignDate":"2020,3,2"
+
+    }
+]
