@@ -24,10 +24,14 @@ export class CvAnalysisComponent implements OnInit {
   Status: string;
 
 public my;
+public statusid;
    public onChange(event): void {  // event will give you full breif of action
     const newVal = event.target.value;
     console.log(newVal);
     this.my = newVal;
+    var idAttr = event.srcElement.attributes.id;
+    this.statusid = idAttr.nodeValue;
+    console.log(this.statusid);
   }
  
 

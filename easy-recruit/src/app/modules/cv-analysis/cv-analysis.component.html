@@ -14,8 +14,8 @@
           <th scope="col">Location</th>
         </tr>
       </thead>
-
-      <tbody>
+    
+      <tbody >
         <tr *ngFor="let list of list">
           <!-- designation started -->
           <td scope="row" class="td-designation">{{list.Designation}}</td>
@@ -24,13 +24,12 @@
           <!-- ==================================== -->
 
           <!-- if loop for Applicants starts -->
-          <td *ngIf="list.status === 'Closed' ;else Spanred" class="td-applicants"><span class="badge bg-secondary "
-              style="  height: 30px;
-            width: 60px;">{{list.Applicants}}</span></td>
+          <td *ngIf="(list.status === 'Closed' || my === 'Closed') ;else Spanred" class="td-applicants">
+            <span class="badge bg-secondary " style="height: 30px;width: 60px;">{{list.Applicants}}</span>
+          </td>
           <!-- else block Spanred stated -->
           <ng-template #Spanred>
-            <td class="td-applicants"><span class="badge " style="  height: 30px;
-            width: 60px;">{{list.Applicants}}</span></td>
+            <td class="td-applicants"><span class="badge" style="height: 30px;width: 60px;">{{list.Applicants}}</span></td>
           </ng-template>
           <!-- if loop for Applicants ended -->
 
@@ -43,16 +42,16 @@
           <!-- ==================================== -->
 
           <!-- if loop for status -->
-          <td *ngIf='list.status === "Active";else Statusclosed' id={{list.id}} class="td-status">
-            <select id="status" class="status-select" (change)="onChange($event)">
+          <td *ngIf='list.status === "Active";else Statusclosed' class="td-status">
+            <select id={{list.id}} class="status-select" (change)="onChange($event)">
               <option value="Active" selected>Active</option>
               <option value="Closed">Closed</option>
             </select>
           </td>
           <!-- elseblock Statusclosed started -->
           <ng-template #Statusclosed>
-            <td id={{list.id}} class="td-status">
-              <select id="status" class="status-select" (change)="onChange($event)">
+            <td class="td-status">
+              <select id={{list.id}} class="status-select" (change)="onChange($event)">
                 <option value="Active">Active</option>
                 <option value="Closed" selected>Closed</option>
               </select>
@@ -66,9 +65,18 @@
           <td class="td-Location">{{list.Location}}</td>
           <!-- location ended -->
         </tr>
-
+ <!-- empty row -->
+ <tr class="emptyrow">
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<!-- empty row ends -->
 
       </tbody>
+    
     </table>
 
   </div>
