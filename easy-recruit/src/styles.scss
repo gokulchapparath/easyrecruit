@@ -4,6 +4,11 @@ $myfont:Muli Bold;
 body {
   overflow-x:hidden;
     background-color: #121432;
+     // mozilla and other browser
+  scrollbar-color: rgba($color: #808087, $alpha: 1.0) transparent;
+  scrollbar-width: thin;
+  
+  // end
 }
 /* width */
 ::-webkit-scrollbar {
@@ -12,20 +17,21 @@ body {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px transparent; 
     border-radius: 10px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: 	rgb(104,104,104,20%); 
+    background: 	rgba($color: #808087, $alpha: 0.2); 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(104,104,104,100%); 
+    background: rgba($color: #808087, $alpha: 1.0); 
   }
+ 
   .main-content {
     overflow-x:hidden;
    overflow-y: hidden;
